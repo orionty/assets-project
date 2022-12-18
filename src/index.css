@@ -1,0 +1,467 @@
+
+* {box-sizing: border-box;}
+/* navbar  */
+.navBar {
+  background-color: rgb(197, 18, 87);
+  color: white;
+}
+.navBrand{
+  font-weight: bold;
+  font-size: 30px;
+  font-family: poppins;
+}
+.btnBg:hover{
+  color: rgb(221, 35, 35);;
+  background-color:rgb(238, 232, 232);
+  border: 2px solid navy;
+}
+.btnBg:active{
+  color: white;
+  background-color: green;
+}
+.btnBg:visited{
+  color: white;
+  background-color: orange;
+}
+/* Large Screens */
+/* form-image-bg */
+@media only screen and (min-width:480px) {
+  .form-image-bg{
+    width: 100%;
+    object-fit: cover;
+    height: 610px;
+  }
+ 
+  .linearBg{
+    background-image: linear-gradient(to right, rgb(10, 10, 10), rgb(22, 22, 19));
+    opacity: 0.9;
+    height:100%
+    
+  }
+  .loginFormWidth {
+    width: 35%;
+  }
+}
+
+/* medium Screens */
+@media only screen and (max-width:768px) {
+  .loginFormWidth {
+    width: 60%;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .loginFormWidth {
+    width: 60%;
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width:375px) {
+  .loginFormWidth {
+    width: 60%;
+  }
+}
+@media only screen and (max-width:600px) {
+  .form-image-bg{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+  }
+
+  .linearBg{
+    background-image: linear-gradient(to right, rgb(10, 10, 10), rgb(22, 22, 19));
+    opacity: 0.9;
+    height:100% 
+  }
+  .loginFormWidth {
+    width: 70%;
+  }
+
+}
+
+/* login-form-overlay */
+.login-form-overlay{
+  color: white;
+  
+}
+
+.login-btn{
+  background-color: goldenrod;
+  width: 100%;
+  color: white;
+}
+.login-btn:hover{
+  color: white;
+}
+.login-btn:active{
+  color: white;
+  background-color: orange;
+}
+
+.btnBorder{
+  border-bottom: 2px solid white;
+}
+
+/* footer layout css */
+.customFooter
+{
+  background-color: rgb(197, 18, 87);
+  color: white;
+}
+.borderBtn:hover{
+  border-bottom: 2px solid white;
+}
+.footerBtn{
+  background-color: navy;
+  color: white;
+}
+input[type='text'],input[type='password'] {
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 4px 5px;
+  background: rgb(250, 247, 247);
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: black ;
+}
+.loginBtn{
+  height: 35px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+  background: #ca0d3c;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+}
+.loginBtn:hover{
+  background: #c3c3ba;
+}
+.registerBtn{
+  float: right;
+  background: #ca0d3c;
+  color: #fff;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: -35px;
+}
+.registerBtn:hover{
+ color: goldenrod;
+}
+.Error{
+  padding: 10px;
+  background-color: #feeaea;
+  border: 1px solid #fadadb;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.SignInbg
+{
+  color:goldenrod;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px #000000;
+
+
+}
+.form_block > .body{
+  background: #070707;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/* ASSETS VAULTS */
+.AV {
+  font-size: 60px;
+  text-shadow: 2px 2px 5px red;
+}
+
+.navitem {
+  color: white;
+}
+.navitem:hover {
+  color: goldenrod;
+}
+
+.parentContainer {
+  display: flex;
+  align-items: center;
+}
+.child-container1 {
+  flex: 50%;
+}
+.child-container2 {
+  flex: 50%;
+}
+.child-container3 {
+  flex: 50%;
+}
+.child-container4 {
+  flex: 50%;
+  margin-left: 10%;
+}
+
+/* client testimonials */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  margin: 7px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  
+  color: white;
+  height: 200px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  
+  transform: rotateY(180deg);
+}
+.sub-footer {
+  background-image:
+  linear-gradient(to bottom, rgba(40, 40, 43, 0.52), rgba(32, 13, 27, 0.73)),
+  url('./../public/img/Investing-in-gold.jpg');
+  height: 500px;
+  background-size: cover;
+  position: relative;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+@media screen and (min-width:480px) {
+  .bgsection {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border:8px solid rgb(66, 66, 66);
+    border-radius: 5px;
+    padding: 30px;
+    width:100%;
+    height: 500px;
+  
+   
+  }
+  .backgroundText {
+    flex: 60%;
+    margin-right: 50px;
+  }
+  .backgroundImg {
+    flex: 40%;
+  }
+  .serviceBg {
+    background-image:
+    linear-gradient(to bottom, rgba(40, 40, 43, 0.52), rgba(32, 13, 27, 0.73)),
+    url('./../public/img/gold_rate.webp');
+    height: 500px;
+    background-size: cover;
+    }
+  .parentCard {
+      display: flex;
+  }
+  .card1 {
+      flex: 25%;
+      margin: 5px;
+  }
+  .card2 {
+      flex: 25%;
+      margin: 5px;
+  }
+  .card3 {
+      flex: 25%; flex: 25%;
+      margin: 5px;
+  }
+  .card4 {
+      flex: 25%;
+      margin: 5px;
+  }
+  .ImgFlipBack { 
+      width: 300px;
+      height: 300px;
+    }
+    .service-parent-container {
+      display: flex;
+      align-items: center;
+    }
+    .service-child-container1 {
+      flex: 25%;
+      margin: 15px;
+    }
+    .service-child-container2 {
+      flex: 25%;
+      margin: 15px;
+      
+    }
+    .service-child-container3 {
+      flex: 25%;
+      margin: 15px;
+  
+    }
+    .service-child-container4 {
+      flex: 25%;
+      margin: 15px;
+  
+    }
+    .serviceFlexImg {
+      width: 100%;
+    }
+    .serviceFlexImg:hover {
+      opacity: 0.5;
+    }
+
+    .contact-parent {
+      display: flex;
+      align-items: center;
+    }
+    .contact-child1 {
+      flex: 60%;
+    }
+    .contact-child2 {
+      flex: 40%;
+    }
+    .flexImage {
+      width: 70%;
+    }
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .contact-parent {
+    display: block;
+  }
+  .service-parent-container {
+    display: block;
+  }
+  .serviceFlexImg {
+    width: 100%;
+  }
+
+  .serviceBg {
+    background-image:
+    linear-gradient(to bottom, rgba(40, 40, 43, 0.52), rgba(32, 13, 27, 0.73)),
+    url('./../public/img/gold_rate.webp');
+    height: 300px;
+    background-size: cover;
+    }
+
+    .green {
+      color: #07ced8;
+    }
+  .bgsection {
+      display: block;
+      align-items: center;
+      justify-content:space-between;
+      border:8px solid rgb(66, 66, 66);
+      border-radius: 5px;
+      padding: 30px;
+      width:100%;
+      height: 570px;
+     
+  }
+  .parentCard {
+      display: block;
+      
+  }
+  .parentContainer {
+      display: block;  
+  }
+  .managerImg{
+      width: 100%;
+  }
+  .flip-card {
+      background-color: transparent;
+      width: 340px;
+      height: 300px;
+      border: 1px solid #f1f1f1;
+      margin: 7px;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+    .ImgFlipBack { 
+      width: 340px;
+      height: 300px;
+    }
+    
+}
+
+.serviceText {
+  border-bottom: 2px solid goldenrod
+}
+#animation {
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, rgb(5, 5, 5), #fff, rgb(255, 191, 53));
+  letter-spacing: 3px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 7s linear infinite;
+  position: relative; 
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
