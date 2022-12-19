@@ -5,13 +5,13 @@ import { getAuth
     signOut } from "firebase/auth";
 
     const firebaseConfig = {
-      apiKey: "AIzaSyAZc29G-Xjn7uShDLQl7zjMHcnR7qavYC4",
-     authDomain: "assets-vaults.firebaseapp.com",
-        projectId: "assets-vaults",
-        storageBucket: "assets-vaults.appspot.com",
-      messagingSenderId: "610869142007",
-      appId: "1:610869142007:web:3920197d1f4172d30acef2",
-      databaseURL: "https://assets-vaults.firebaseio.com",
+      apiKey: "",
+     authDomain: "",
+        projectId: "",
+        storageBucket: "",
+      messagingSenderId: "",
+      appId: "",
+      databaseURL: "",
       
     };
       // Initialize Firebase
